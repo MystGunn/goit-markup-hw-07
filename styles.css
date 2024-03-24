@@ -11,10 +11,6 @@
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation {
-  color: #2e2f42;
-}
-
 .active {
   border-bottom: 10px solid;
   border-color: #4d5ae5;
@@ -565,4 +561,38 @@ a:hover {
   width: 24px;
   height: 20px;
   fill: #ffff;
+}
+
+.mobile-burger {
+  stroke: #000000;
+  width: 32px;
+  height: 22px;
+}
+
+.js-menu-container {
+  display: none;
+}
+
+.js-menu-container.is-open {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+}
+
+.navigation {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+    color: #2e2f42;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .navigation {
+    display: flex;
+    color: #2e2f42;
+  }
 }

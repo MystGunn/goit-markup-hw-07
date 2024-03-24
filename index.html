@@ -16,9 +16,43 @@
 
   <body>
     <header>
+      <div class="js-menu-container">
+        <button class="menu-toggle js-close-menu">&times;</button>
+        <section>
+          <nav class="navigation">
+            <ul class="list-container">
+              <li>
+                <a href="index.html" class="page-info active">Studio</a>
+              </li>
+              <li>
+                <a href="portofolio.html" class="page-info">Portofolio</a>
+              </li>
+              <li class="page-info">Contacs</li>
+            </ul>
+          </nav>
+        </section>
+
+        <section>
+          <ul class="list-container">
+            <li>
+              <a href="tel:+11 (000) 111-11-11" class="contact-info"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="contact-info"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </section>
+      </div>
       <div class="web-container">
         <a href="index.html" class="logo">STUDIO</a>
 
+        <svg class="mobile-burger js-open-menu">
+          <use href="./icons/menu-defs.svg#icon-menu"></use>
+        </svg>
         <!--Nav section-->
         <section>
           <nav class="navigation">
@@ -212,7 +246,7 @@
         </div>
       </section>
 
-      <!-- jobs -->
+      <!--Jobs -->
       <section class="section-container">
         <div class="container">
           <h2 class="header-container">What Are We Doing</h2>
@@ -224,7 +258,7 @@
         </div>
       </section>
 
-      <!-- Team -->
+      <!--Team -->
       <section class="team-class section-container">
         <div class="container">
           <h2 class="header-container">Our Team</h2>
@@ -433,6 +467,7 @@
         </div>
       </section>
 
+      <!--Customers-->
       <section class="section-container">
         <div class="container">
           <h2 class="customers-header">Customers</h2>
@@ -552,7 +587,6 @@
               type="text"
               id="email"
               name="email"
-              autofocus
               placeholder="E-mail"
             />
 
@@ -568,5 +602,6 @@
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
