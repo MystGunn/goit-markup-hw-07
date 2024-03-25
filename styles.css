@@ -567,6 +567,9 @@ a:hover {
   stroke: #000000;
   width: 32px;
   height: 22px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
 }
 
 .js-menu-container {
@@ -577,22 +580,57 @@ a:hover {
   display: flex;
   flex-direction: column;
   position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+  z-index: 1;
+  width: 50%;
+  height: 100%;
+}
+
+.js-close-menu {
+  background-color: white;
+  border-radius: 50%;
+  color: #2e2f42;
+  outline: none;
+  position: absolute;
+  top: 24px;
+  right: 24px;
 }
 
 .navigation {
   display: none;
 }
 
+.contact-info {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .navigation {
     display: flex;
     color: #2e2f42;
   }
+
+  .contact-info {
+    font-family: var(--heading-font-family);
+    font-size: 16px;
+    color: #434455;
+  }
+
+  .mobile-burger {
+    display: none;
+  }
+
+  .js-open-menu {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1158px) {
-  .navigation {
-    display: flex;
-    color: #2e2f42;
+  .mobile-burger {
+    display: none;
+  }
+  .js-open-menu {
+    display: none;
   }
 }

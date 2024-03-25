@@ -18,41 +18,84 @@
     <header>
       <div class="js-menu-container">
         <button class="menu-toggle js-close-menu">&times;</button>
-        <section>
-          <nav class="navigation">
-            <ul class="list-container">
-              <li>
-                <a href="index.html" class="page-info active">Studio</a>
-              </li>
-              <li>
-                <a href="portofolio.html" class="page-info">Portofolio</a>
-              </li>
-              <li class="page-info">Contacs</li>
-            </ul>
-          </nav>
-        </section>
-
-        <section>
+        <nav class="mobile-menu-navigation">
           <ul class="list-container">
             <li>
-              <a href="tel:+11 (000) 111-11-11" class="contact-info"
+              <a href="index.html">Studio</a>
+            </li>
+            <li>
+              <a href="portofolio.html">Portofolio</a>
+            </li>
+            <li>Contacs</li>
+          </ul>
+
+          <ul class="list-container">
+            <li>
+              <a href="tel:+11 (000) 111-11-11" class="mobile-contact"
                 >+11 (000) 111-11-11</a
               >
             </li>
             <li>
-              <a href="mailto:info@devstudio.com" class="contact-info"
+              <a href="mailto:info@devstudio.com" class="mobile-contact"
                 >info@devstudio.com</a
               >
             </li>
           </ul>
-        </section>
+        </nav>
+        <div class="icons-list">
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            class="icon"
+            aria-label="instagram-link"
+          >
+            <svg>
+              <use href="./icons/symbol-defs.svg#icon-instagram"></use>
+            </svg>
+          </a>
+
+          <a
+            href="https://www.twitter.com"
+            target="_blank"
+            class="icon"
+            aria-label="twitter-link"
+          >
+            <svg>
+              <use href="./icons/symbol-defs.svg#icon-twitter"></use>
+            </svg>
+          </a>
+
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            class="icon"
+            aria-label="facebook-link"
+          >
+            <svg>
+              <use href="./icons/symbol-defs.svg#icon-facebook"></use>
+            </svg>
+          </a>
+
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            class="icon"
+            aria-label="linkedin-link"
+          >
+            <svg>
+              <use href="./icons/symbol-defs.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </div>
       </div>
       <div class="web-container">
         <a href="index.html" class="logo">STUDIO</a>
 
-        <svg class="mobile-burger js-open-menu">
-          <use href="./icons/menu-defs.svg#icon-menu"></use>
-        </svg>
+        <button class="js-open-menu">
+          <svg class="mobile-burger">
+            <use href="./icons/menu-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
         <!--Nav section-->
         <section>
           <nav class="navigation">
