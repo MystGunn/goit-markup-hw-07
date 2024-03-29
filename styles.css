@@ -692,6 +692,7 @@ a:hover {
     flex-wrap: nowrap;
     justify-content: center;
     gap: 24px;
+    width: 1200px;
   }
 
   .all-solutions {
