@@ -170,15 +170,17 @@ a:hover {
   padding: 16px 32px;
 }
 
-.container {
-  width: 1200px;
-}
-
 .list-container {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   gap: 24px;
+}
+
+.list-solution {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .portofolio-container {
@@ -297,9 +299,7 @@ a:hover {
 }
 
 .solutions-list {
-  display: flex;
-  flex-direction: row;
-  background-color: var(--solutions-background);
+  display: none;
 }
 
 .solution {
@@ -629,6 +629,11 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
+
+.jobs-list {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .navigation {
     display: flex;
@@ -649,6 +654,15 @@ a:hover {
   .js-open-menu {
     display: none;
   }
+
+  .list-solution {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    width: 600px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -657,5 +671,30 @@ a:hover {
   }
   .js-open-menu {
     display: none;
+  }
+
+  .container {
+    width: 1200px;
+  }
+
+  .solutions-list {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--solutions-background);
+  }
+
+  .section-container {
+    display: flex;
+    justify-content: center;
+    padding: 94px 0;
+    width: 1440px;
+  }
+
+  .list-solution {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 24px;
   }
 }
