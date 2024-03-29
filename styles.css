@@ -172,15 +172,10 @@ a:hover {
 
 .list-container {
   display: flex;
+  flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   gap: 24px;
-}
-
-.list-solution {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .portofolio-container {
@@ -690,7 +685,7 @@ a:hover {
     width: 1440px;
   }
 
-  .list-solution {
+  .list-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
