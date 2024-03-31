@@ -660,9 +660,44 @@ a:hover {
   .list-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 24px;
+  }
+
+  .portofolio-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    width: 800px;
+  }
+
+  .portofolio-container :hover {
+    cursor: pointer;
+    box-shadow: 5px 5px blue;
+    transition: var(--transition);
+  }
+
+  .bottom-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #f4f4fd;
+    background-color: var(--background-color-studio);
+    padding: 94px 0;
+    width: 700px;
+  }
+
+  .bottom-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 190px;
+    font-family: var(--text-font-family);
+    font-size: 18px;
   }
 }
 
@@ -737,6 +772,7 @@ a:hover {
     color: #f4f4fd;
     background-color: var(--background-color-studio);
     padding: 94px 0;
+    width: 1200px;
   }
 
   .bottom-info {
@@ -746,6 +782,7 @@ a:hover {
     padding-left: 190px;
     font-family: var(--text-font-family);
     font-size: 18px;
+    width: 1200px;
   }
 
   .bottom-size {
@@ -767,6 +804,7 @@ a:hover {
     flex-wrap: wrap;
     justify-content: center;
     gap: 24px;
+    width: 1200px;
   }
 
   .portofolio-container :hover {
