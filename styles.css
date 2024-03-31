@@ -66,7 +66,6 @@ a:hover {
   display: flex;
   justify-content: center;
   text-align: center;
-  width: 800px;
   font-size: 56px;
 }
 .bottom-row {
@@ -173,14 +172,15 @@ a:hover {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 24px;
 }
 
 .portofolio-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   gap: 24px;
 }
 
@@ -606,7 +606,7 @@ a:hover {
 .menu-icons {
   display: flex;
   justify-content: flex-start;
-  gap: 24px;
+  gap: 10px;
   margin-top: 8px;
   margin-bottom: 32px;
 }
@@ -628,6 +628,12 @@ a:hover {
 
 .jobs-list {
   display: none;
+}
+
+.list-menu {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 768px) {
@@ -657,7 +663,6 @@ a:hover {
     flex-wrap: nowrap;
     justify-content: center;
     gap: 24px;
-    width: 600px;
   }
 }
 
@@ -747,5 +752,26 @@ a:hover {
     width: 300px;
     font-family: var(--heading-font-family);
     font-size: 16px;
+  }
+
+  .solutions-size {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 800px;
+    font-size: 56px;
+  }
+
+  .portofolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .portofolio-container :hover {
+    cursor: pointer;
+    box-shadow: 5px 5px blue;
+    transition: var(--transition);
   }
 }
